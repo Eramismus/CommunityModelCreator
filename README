@@ -1,0 +1,13 @@
+This code set is meant for creating community models based on UK data
+
+standardhouse.py contains the data for the models, material parameters etc. House types based on work by Allen and Pinney (1990) and Leighton and Pinney (1990).
+
+Allen, E. A. and Pinney, A. A. (1990) Standard dwellings for modelling: details of dimensions, construction and occupancy schedules.
+
+Leighton, D. J. and Pinney, A. A. (1990) A set of standard office descriptions for use in modelling studies.
+
+creator_residential.py creates a Modelica package structure containing 30 residential buildings representing a community along with MPC and PI models.
+
+For futher information just contact the author of the code.
+
+-Eramismus

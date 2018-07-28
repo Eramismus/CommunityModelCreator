@@ -1,0 +1,34 @@
+Could not read input file "dsu.txt", inputs will be at their start-values.
+... loading "tab1" from "C:/Users/cvrse/OneDrive - Loughborough University/SimDevEnv/Simulator_v7/Nottingham_TRY.mos"
+Model: ResidentialCommunityUK.SemiDetached_11.SemiDetached_11_Models.SemiDetached_11_House_mpc
+Integration started at 0 using integration method:
+RK-method: radau IIa
+Local extrapolation
+FSAL
+Continuous extension
+
+The following error was detected at time: 29705461.51788746
+The arguments x_min and x_max to OneNonLinearEquation.solve(..)
+do not bracket the root of the single non-linear equation:
+  x_min  = 200
+  x_max  = 6000
+  y_zero = 175900
+  fa = f(x_min) - y_zero = 24243.2
+  fb = f(x_max) - y_zero = 7.3422e+06
+fa and fb must have opposite sign which is not the case
+The stack of functions is:
+Internal.solve_Unique7
+Modelica.Media.Air.DryAirNasa.T_h_Unique6
+Modelica.Media.Air.DryAirNasa.setState_phX_Unique4(thermalZoneFourElements.volAir.p_start, thermalZoneFourElements.volAir.hOut_internal, cat(1, thermalZoneFourElements.volAir.Xi, {1-sum(thermalZoneFourElements.volAir.Xi)}))
+Integration terminated successfully at T = 3.1536e+07
+   CPU time for integration                  : 1.202 seconds
+   Number of result points                   : 8761
+   Number of grid points                     : 8760
+   Number of (successful) steps              : 711
+   Number of rejected steps                  : 162
+   Number of F-evaluations                   : 5195
+   Number of crossing function evaluations   : 2137
+   Number of Jacobian-evaluations            : 53
+   Number of (model) time events             : 0
+   Number of state    events                 : 1
+   Number of step     events                 : 0

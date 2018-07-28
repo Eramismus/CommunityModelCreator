@@ -1,0 +1,26 @@
+<%namespace file="/modelica_language/" import="get_true_false"/>
+package ${package_name}
+model ${model_name}
+	parameter Integer numbuilds = ${numbuilds};
+% for bldg in bldg_list:
+	${RC_package}.${RC_model} ${bldg}_${RC_model};
+	Modelica.Blocks.Interfaces.RealInput ConvGain2_${bldg};
+% endfor
+Modelica.Blocks.Interfaces.RealOutput TotalHeatPower(
+			final quantity="HeatPower",
+			final unit="W",
+			displayUnit="kW");
+Modelica.Blocks.Interfaces.RealInput weaHGloHor;
+Modelica.Blocks.Interfaces.RealInput weaTDryBul(unit="K");
+Modelica.Blocks.Math.MultiSum multiSum_total(nu=numbuilds);
+	equation 
+	% for bldg in bldg_list:
+		connect(ConvGain2_${bldg}, multiSum_total.u[${loop.index}+1]);
+		connect(ConvGain2_${bldg}, ${bldg}_${RC_model}.ConvGain2);
+		connect(weaHGloHor, ${bldg}_${RC_model}.weaHGloHor);
+		connect(weaTDryBul, ${bldg}_${RC_model}.weaTDryBul);
+	% endfor
+		connect(multiSum_total.y, TotalHeatPower);
+annotation (uses(${RC_package}(version="1"), Modelica(version="3.2.2")));
+end ${model_name};
+end ${package_name};
