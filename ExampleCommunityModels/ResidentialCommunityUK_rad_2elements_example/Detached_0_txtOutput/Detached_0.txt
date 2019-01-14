@@ -1,0 +1,107 @@
+ 
+---- General Building Information ----
+
+building name = Detached_0 -
+building type = Building -
+building year of construction = 1950 -
+building number of floors = 2 -
+building height of floors = 2.5 m
+building net leased area = 45.95420551538872 m^2
+
+static heat load = 10827.6 W
+static cooling load = 0.0
+
+number of thermal zone.model_attrs = 1 -
+
+---- House ----
+
+    area = 45.95420551538872 m2
+    volume = 229.7710275769436 m3
+    number of outer walls = 7
+    number of rooftops = 4
+    number of ground floors = 1
+    number of exterior orientations = 8
+    linearized radiation exchange between walls = 5.975611988557149
+
+  * Activity, usage and systems engineering *
+
+    usage = Living
+    upper limit of heater = 5413.8024563638255 W
+    upper limit of cooler = 0 W
+
+
+    Lighting
+
+    heating power of lighting = 7.0 W/m2
+    heating power of lighting = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] W/m2
+    Ratio of convective heat for lighting =0.5
+    relative profile lighting =[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+    Persons
+
+    number of people in the zone= 1.5
+    activity type of persons = 3 W/person
+    Ratio of convective heat for persons =0.5
+    relative profile persons =[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.8, 0.6, 0.4, 0.4, 0.4, 0.6, 0.8, 0.6, 0.4, 0.4, 0.6, 0.8, 0.8, 0.8, 0.8, 1.0, 1.0, 1.0]
+
+    Machines
+
+    number of machines in the zone= 2.0
+    activity type of persons = 2 W/machine
+    Ratio of convective heat for persons =0.5
+    relative profile persons =[0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.5, 1.0, 0.5, 0.5, 0.5, 1.0, 1.0, 0.5, 0.5, 0.5, 1.0, 1.0, 1.0, 1.0, 0.5, 0.5, 0.5, 0.1]
+
+    Air Handling Unit
+
+    with_ahu = false
+    minimum specific air flow supplied by the AHU = 0.3 m^3/(h m^2)
+    maximum specific air flow supplied by the AHU = 0.6 m^3/(h m^2)
+    constant infiltration usage = false
+    base value for the infiltration rate = 0.2 1/h
+    Additional infiltration rate for maximum persons activity = 1.0 1/h
+    Additional infiltration rate when overheating appears  = [3.0, 2.0] 1/h
+    Additional infiltration rate in the summer with  = [1.0, 283.15, 290.15] [infiltration_rate [1/h], Tmin [K], Tmax [K]]
+    Reduction factor of userACH for cold weather with  = [0.2, 273.15, 283.15] [infiltration_rate [1/h], Tmin [K], Tmax [K]]
+
+  * Windows *
+
+    sum of window areas = 13.66416952272288
+    window's coefficient of heat transfer (convective, inner side) = 17.0 W/(m^2 K)
+    window's coefficient of heat transfer (convective, outer side) = 11.4 W/(m^2 K)
+    resistor window = 0.014636820749875011 K/W
+    weigthfactors for the windows = [0.3885580907588908, 0.0, 0.05216788815872416, 0.0, 0.559274021082385, 0.0, 0.0, 0.0]
+    window's U*A value = 39.429959105177105 W/(K)
+    convective heat transmission due to absorption of the window = 0.030000000000000002
+
+
+    energy transmittances if sunblind is closed = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+  * Inner Walls *
+
+    inner wall area = 120.67009132244385 m^2
+    inner wall's coefficient of heat transfer (convective) = 2.9999999999999996 W/(m^2 K)
+    resistor 1 inner wall = 0.0008774764460600116 K/W
+    capacity 1 inner wall = 6462579.915295081 J/K
+
+  * Outer Walls *
+
+    outer wall area = 226.67420897607155 m^2
+    outer wall's coefficient of absorption = 0.7923313094949834
+    outer wall's coefficient of heat transfer (convective, inner side) = 3.5183897556796584 W/(m^2 K)
+    outer wall's coefficient of heat transfer (convective, outer side) = 21.33492153714354 W/(m^2 K)
+    weigthfactors for the walls = [0.18789243450481938, 0.058744270546709304, 0.24163205004573388, 0.24163205004573388, 0.13721167022221462, 0.058744270546709304, 0.03707162704403985, 0.03707162704403985]
+    resistor 1 outer wall = 0.000665200542092684 K/W
+    capacity 1 outer wall = 22529245.04127027 J/K
+    resistor "Rest" = 0.009573190719125012 K/W
+
+  * Ground Floors *
+
+    ground floor area = 50.48526683486474 m^2
+    ground floor's coefficient of heat transfer (convective, inner side) = 3.0 W/(m^2 K)
+    weigthfactors for the ground = 0.0
+    resistor 1 ground floo r= 0.002109340041978932 K/W
+    capacity 1 ground floo r= 19443398.149010774 J/K
+    resistor "Rest" = 0.0032198903635503274 K/W
+
+
+
